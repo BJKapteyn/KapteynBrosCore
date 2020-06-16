@@ -1,0 +1,102 @@
+﻿body {
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#head {
+    display: grid;
+    grid-template-columns: 10% auto 250px;
+    grid-template-rows: auto;
+    grid-template-areas: "logo . navbar";
+    height: 100px;
+}
+
+#logo {
+    height: 100%;
+    grid-area: logo;
+    font-size: 100px;
+    color: rgb(225, 7, 5)
+}
+
+#navBar {
+    position: static;
+    grid-area: navbar;
+    width: 100%;
+    text-align: center;
+}
+
+.navElement {
+    padding-top: 10px;
+    font-size: 20px;
+    margin: auto;
+    display: inline-block;
+    height: 90px;
+    width: 80px;
+    text-decoration: none;
+}
+
+    .navElement:visited, .navElement {
+        color: red;
+    }
+
+#mainGrid {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 1000px;
+}
+
+/*-------------------------------------------------------Home Page-----------------------------------------------------*/
+
+#bannerQuote {
+    background-image: url('../pics/construction.jpg');
+    background-position: bottom;
+    height: 500px;
+}
+
+#quote {
+    color: white;
+    font-size: 80px;
+    margin: 10px 200px 0px 200px;
+    text-align: center;
+    text-shadow: 5px 2px 10px black;
+}
+
+.sectionTitle {
+    font-size: 50px;
+    text-align: center;
+}
+
+#blurbFlexContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.blurb {
+    border: 1px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+    height: auto;
+    width: 300px;
+    margin: 5px;
+}
+
+    .blurb > * {
+        color: white;
+    }
+
+.blurbTitle {
+    text-align: center;
+    background-color: rgb(128, 0, 20);
+    min-height: 50px;
+}
+
+    .blurbTitle > h2 {
+        margin: 0px;
+        font-size: 35px;
+    }
+
+.blurbContent {
+    padding: 5px 10px;
+    min-height: 400px;
+    background-color: rgb(131, 142, 131);
+}
