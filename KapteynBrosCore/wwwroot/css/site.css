@@ -21,16 +21,21 @@
 }
 
 #navBar {
+
     position: fixed;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 30px;
     background-color: white;
     padding-right: 10px;
 }
 
 #navContainer {
     width: auto;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    transition: right 500ms ease-out;
 }
 
 .navElement {
@@ -42,6 +47,7 @@
     width: 80px;
     text-decoration: none;
 }
+
 
 .navElement:visited, .navElement {
     color: red;
