@@ -14,30 +14,38 @@
 #logo {
     height: 100%;
     grid-area: logo;
-    font-size: 100px;
-    color: rgb(225, 7, 5)
+    font-size: 80px;
+    color: rgb(225, 7, 5);
+    z-index: 1;
+
 }
 
 #navBar {
-    position: static;
-    grid-area: navbar;
+    position: fixed;
+    top: 0;
     width: 100%;
-    text-align: center;
+    height: auto;
+    background-color: white;
+    padding-right: 10px;
+}
+
+#navContainer {
+    width: auto;
 }
 
 .navElement {
-    padding-top: 10px;
+    text-align: center;
     font-size: 20px;
     margin: auto;
     display: inline-block;
-    height: 90px;
+    height: auto;
     width: 80px;
     text-decoration: none;
 }
 
-    .navElement:visited, .navElement {
-        color: red;
-    }
+.navElement:visited, .navElement {
+    color: red;
+}
 
 #mainGrid {
     display: grid;
